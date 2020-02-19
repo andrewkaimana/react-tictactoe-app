@@ -74,6 +74,7 @@ class Game extends React.Component {
   render() {
     return (
       <div className="game">
+        <input type="button" value="Logout" onClick={()=>this.props.logoutUser()} />
         <div className="game-board">
           <Board />
         </div>
